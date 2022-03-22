@@ -5,7 +5,7 @@ NUM=$1
 
 for id in $(cat $batch_info/id_batch_$NUM); 
 do 
-	echo ${id}_restore.nii.gz;
+	echo ${id}_brain.nii;
 	gunzip -f ${id}_brain_restore.nii.gz	 
 done
 

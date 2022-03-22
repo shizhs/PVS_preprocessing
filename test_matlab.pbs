@@ -1,0 +1,14 @@
+#!/bin/bash
+
+#PBS -l select=1:ncpus=1:mem=4gb
+#PBS -l walltime=12:00:00
+#PBS -j oe
+#PBS -o /srv/scratch/cheba/NiL/shizuka/PhD/preprocessing/comment 
+
+module load matlab
+
+cd /srv/scratch/cheba/NiL/shizuka/PhD/preprocessing/
+
+#matlab -nodisplay -nosplash -r "run_rotate({'/srv/scratch/cheba/NiL/Software/spm/12', './test/sub-0022_ses-wave2_acq-Cor_run-01_T1w.nii'})"
+
+matlab -nodisplay -nosplash -r "run_rotate('/srv/scratch/cheba/NiL/Software/spm/12', {'/srv/scratch/cheba/NiL/shizuka/PhD/preprocessing/test/0022.nii', '/srv/scratch/cheba/NiL/shizuka/PhD/preprocessing/test/0042.nii', '/srv/scratch/cheba/NiL/shizuka/PhD/preprocessing/test/0046.nii', '/srv/scratch/cheba/NiL/shizuka/PhD/preprocessing/test/0082.nii', '/srv/scratch/cheba/NiL/shizuka/PhD/preprocessing/test/0094.nii', '/srv/scratch/cheba/NiL/shizuka/PhD/preprocessing/test/0099.nii', '/srv/scratch/cheba/NiL/shizuka/PhD/preprocessing/test/0137.nii', '/srv/scratch/cheba/NiL/shizuka/PhD/preprocessing/test/0142.nii', '/srv/scratch/cheba/NiL/shizuka/PhD/preprocessing/test/0202.nii', '/srv/scratch/cheba/NiL/shizuka/PhD/preprocessing/test/0257.nii'})"

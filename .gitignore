@@ -1,0 +1,4 @@
+test/
+batch_info*/
+comment*
+arrayJob.pbs.o*

@@ -1,0 +1,12 @@
+#!/bin/bash
+
+#PBS -l select=1:ncpus=1:mem=4gb
+#PBS -l walltime=12:00:00
+#PBS -j oe
+#PBS -o /srv/scratch/cheba/NiL/shizuka/PhD/preprocessing/comment 
+
+module load matlab
+
+cd $prep_pipeline
+source $prep_pipeline/env.sh
+
