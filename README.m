@@ -1,3 +1,6 @@
+## Old version of MRIbrain preprocessing
+# left the repo for referencing
+
 ## Steps 
 
 1. open env.sh file and set the environmental variable accordingly
